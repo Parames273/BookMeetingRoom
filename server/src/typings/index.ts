@@ -17,3 +17,11 @@ export interface IUpdateProfile {
 export interface IUserDetails{
     userId: string
 }
+
+export interface IResponse<T = undefined> {
+    data: T | undefined,
+    httpCode: number;
+    statusCode: string;
+    message: string,
+    error?: string | unknown | null,
+}

@@ -1,4 +1,4 @@
-export const DB_NAME = "HealthCare";
+export const DB_NAME = "BookMeetingRoom";
 
 //common constants 
 export const SERVER_ERROR = "Server Error";
