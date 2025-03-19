@@ -7,6 +7,7 @@ const version = 'v1';
 const api = {
   login: `${BASE_URL}${version}/auth/login`,
   register: `${BASE_URL}${version}/auth/register`,
+  getHistory: `${BASE_URL}${version}/booking`
 };
 
 export default api;

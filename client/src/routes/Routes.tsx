@@ -28,6 +28,11 @@ export const ROUTES: IRoute[] = [
         protected: true
     },
     {
+        path: "/myBooking",
+        component: lazy(() => import("../pages/booking/BookingHistory")),
+        protected: false
+    },
+    {
         path: "*",
         component: lazy(() => import("../pages/NotFound")),
         protected: false
