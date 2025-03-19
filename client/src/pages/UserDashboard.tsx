@@ -4,7 +4,7 @@ const UserDashboard: React.FC = () => {
   return (
     <div className="container mx-auto mt-8">
       <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Health Metrics</h2>
+        <h2 className="text-2xl font-bold mb-4">Rajesh Dashboard</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Heart Rate */}
           <div className="bg-gray-100 p-4 rounded-lg shadow">
