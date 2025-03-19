@@ -11,7 +11,7 @@ describe('AuthWrapper Component', () => {
     );
 
     // Check if the navbar text is rendered
-    expect(screen.getByText('Health Care')).toBeInTheDocument();
+    expect(screen.getByText('Book Meeting Room')).toBeInTheDocument();
 
     // Check if the child component is rendered
     expect(screen.getByText('Test Child Component')).toBeInTheDocument();

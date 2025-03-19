@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
                         <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
                     </svg>
                 </button>
-                <Link className="white text-bold ml-4" to='/dashboard'>Health Care</Link>
+                <Link className="white text-bold ml-4" to='/dashboard'> Book Meeting Room</Link>
             </div>
             <div className={`flex flex-col sm:flex-row items-center w-full sm:w-auto ${isOpen ? "block" : "hidden"} sm:block`}>
                 <div className="flex items-center gap-4">
