@@ -6,12 +6,15 @@ export const loginValidator = [
     body('password','The password length should be minimum 8 characters').isLength({min:8}),
 ]
 
+// Register validators
 export const registerValidator = [
-    body('userName','Username does not empty').not().isEmpty(),
-    body('email','Inavalid email').isEmail(),
-    body('email','Invalid does not empty').not().isEmpty(),
-    body('password','Password does not empty').not().isEmpty(),
-    body('password','The password length should be minimum 8 characters').isLength({min:8}),
-    body('phoneNumber','Phone number does not empty').not().isEmpty(),
-    body('gender','Gender does not empty').not().isEmpty(),
-]
+    body('name', 'Name must not be empty').not().isEmpty(),
+    body('email', 'Invalid email').isEmail(),
+    body('email', 'Email must not be empty').not().isEmpty(),
+    body('password', 'Password must not be empty').not().isEmpty(),
+    body('password', 'Password length should be minimum 8 characters').isLength({ min: 8 }),
+    body('phoneNumber', 'Phone number must not be empty').not().isEmpty(),
+    body('phoneNumber', 'Phone number must be a valid number').isNumeric(),
+    body('gender', 'Gender must not be empty').not().isEmpty(),
+    body('designation', 'Designation must not be empty').not().isEmpty(),
+];

@@ -2,6 +2,7 @@ import { Request, Response } from "express"
 import { SERVER_ERROR } from "../constants";
 import { userLogin, userRegister } from "../services/auth.services";
 import logger from "../utils/logger";
+import { statusMap } from "../utils/responseHandler";
 
 /**
  * Register users
@@ -11,14 +12,17 @@ import logger from "../utils/logger";
  */
 export const registerUser = async (req: Request, res: Response) => {
     try {
-        // const { userName, email, phoneNumber, password, gender } = req.body;
         const result = await userRegister(req.body);
-        res.status(result.status).json(result.data);
+        if(result){
+            const httpStatus = statusMap[result.status];
+            res.status(httpStatus).json({ data: result.data, statusCode: result.status });
+        }
     } catch (error) {
         logger.error(error);
-        res.status(500).json({ message: SERVER_ERROR });
+        res.status(500).json({ message: 'SERVER_ERROR' });
     }
 };
+
 
 /**
  * Login users

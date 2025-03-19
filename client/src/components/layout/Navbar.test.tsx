@@ -29,7 +29,7 @@ describe('Navbar Component', () => {
     });
 
     it('renders Navbar component', () => {
-        expect(screen.getByText(/Health Care/i)).toBeInTheDocument();
+        expect(screen.getByText(/Book Meeting Room/i)).toBeInTheDocument();
     });
 
 
@@ -44,7 +44,7 @@ describe('Navbar Component', () => {
     });
 
     it('navigation links', () => {
-        const dashboardLink = screen.getByRole('link', { name: /Health Care/i });
+        const dashboardLink = screen.getByRole('link', { name: /Book Meeting Room/i });
         fireEvent.click(dashboardLink);
         expect(window.location.pathname).toBe('/dashboard');
     });
