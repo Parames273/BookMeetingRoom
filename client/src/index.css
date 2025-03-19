@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    height: 4px;
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #09df09;
+    border-radius: 10px;
+  }
+
+  :root {
+    --primary: #B22222,
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: "Lato", sans-serif;
+    color: black;
+  }
+}
+
+:root {
+  --primary-clr: #DC143C;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
