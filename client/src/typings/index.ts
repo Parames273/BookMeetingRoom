@@ -34,12 +34,13 @@ export interface Credentials {
 }
 
 export interface IRegister{
-  userName: string,
+  name: string,
   email: string,
   phoneNumber: string,
   password: string,
   confirmPassword: string,
-  gender: string
+  gender: string,
+  designation:string
 }
  
 

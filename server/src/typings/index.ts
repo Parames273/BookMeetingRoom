@@ -19,13 +19,3 @@ export interface IUserDetails{
     userId: string
 }
 
-
-
-export interface IBooking extends Document {
-  SapId: ObjectId;
-  RoomId: ObjectId;
-  Date: string;
-  StartTime: string;
-  EndTime: string;
-  Status: 'Pending' | 'Rejected' | 'Approved';
-}
